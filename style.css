@@ -653,3 +653,142 @@ footer img {
     font-size: 13px;
     background: var(--bg);
 }
+
+
+/* ######################### */
+/* Breakpoints */
+/* ######################### */
+
+@media screen and (max-width: 1050px){
+    nav {
+        padding: 1rem;
+    }
+    #burger-menu {
+        display: block;
+    }
+    .navigation {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        flex-direction: column;
+        row-gap: 2rem;
+        width: 280px;
+        min-height: 100vh;
+        background: var(--bg);
+        box-shadow: 5px 0 5px 0 rgba(0,0,0,.2);
+        padding: 1rem 0;
+        transition: .2s ease-in-out;
+    }
+    .navigation.active {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 991px){
+    section {
+        padding: 50px 40px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .home-form form {
+        bottom: 0.2rem;
+        left: 40px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home {
+        grid-template-columns: 1fr;
+    }
+    .home-form form {
+        position: unset;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-container {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    .about-img {
+        padding: 1rem;
+        order: 2
+    }
+}
+
+/* ######################### */
+/* Contact Responsive */
+/* ######################### */
+
+@media screen and (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-info .social-contact {
+        grid-column: 1 / -1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form .form-group {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 563px){
+    section {
+        padding: 50px 14px;
+    }
+    .news-box {
+    width: 280px;
+    }
+    #home {
+        margin-top: 3rem;
+    }
+    .copy {
+        padding: 1rem;
+    }
+    .services-container {
+        grid-template-columns: repeat(auto-fit,minmax(240px, auto));
+    }
+    .home-form {
+        padding-top: 2rem;
+    }
+
+    .contact-container {
+        gap: 1.5rem;
+    }
+
+    .contact-info {
+        padding: 1.5rem;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .contact-form .form-input input,
+    .contact-form .form-input select,
+    .contact-form .form-input textarea {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
