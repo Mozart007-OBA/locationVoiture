@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nous contacter - Location de Voitures</title>
+  </head>
+  <body>
+    <!-- #################### -->
+    <!-- Navigation -->
+    <!-- #################### -->
+
+    <nav>
+      <a href="index.html" class="logo"
+        ><img src="./images/logo.png" alt=""
+      /></a>
+      <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="home.html#reviews">Les avis</a></li>
+      </ul>
+      <div class="btns">
+        <a href="#" class="inscription"><i class="bx bxs-user"></i></a>
+      </div>
+      <div class="bx bx-menu" id="burger-menu"></div>
+    </nav>
+
+    <!-- #################### -->
+    <!-- Contact Section -->
+    <!-- #################### -->
+
+    <section id="contact" class="contact" style="margin-top: 80px">
+      <div class="section-heading">
+        <span>Prenez contact</span>
+        <h2>Nous sommes à votre écoute !</h2>
+      </div>
+
+      <div class="contact-container">
+        <!-- Informations de contact -->
+        <div class="contact-info">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <div>
+              <h4>Adresse</h4>
+              <p>Avenue Marien NGOUABI<br />Talangaï, Congo</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <i class="bx bx-phone"></i>
+            <div>
+              <h4>Téléphone</h4>
+              <p>+242 06 145 45 89</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <div>
+              <h4>E-mail</h4>
+              <p>contact@location-voitures.fr</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <i class="bx bx-time"></i>
+            <div>
+              <h4>Horaires d'ouverture</h4>
+              <p>Lun - Ven : 8h00 - 20h00<br />Sam : 9h00 - 18h00</p>
+            </div>
+          </div>
+
+          <div class="social-contact">
+            <h4>Suivez-nous</h4>
+            <div class="social">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-youtube"></i>
+              <i class="bx bxl-linkedin"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <div class="form-input">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" placeholder="Votre nom" required />
+              </div>
+              <div class="form-input">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="votre@email.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-input">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" placeholder="Votre numéro" />
+              </div>
+              <div class="form-input">
+                <label for="sujet">Sujet</label>
+                <select id="sujet" required>
+                  <option value="">Choisissez un sujet</option>
+                  <option value="location">Demande de location</option>
+                  <option value="information">Demande d'information</option>
+                  <option value="reclamation">Réclamation</option>
+                  <option value="partenariat">Partenariat</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-input full-width">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Votre message..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" id="consent" required />
+              <label for="consent"
+                >J'accepte que mes données soient utilisées pour me
+                recontacter.</label
+              >
+            </div>
+
+            <button type="submit" class="btn">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- #################### -->
+    <!-- Newsletter -->
+    <!-- #################### -->
+
+    <section class="newsletter">
+      <h2>Inscrivez vous à la newsletter</h2>
+      <div class="news-box">
+        <input type="email" placeholder="Indiquez votre e-mail" />
+        <a href="#" class="btn">S'inscrire</a>
+      </div>
+    </section>
+
+    <!-- #################### -->
+    <!-- Footer -->
+    <!-- #################### -->
+
+    <footer>
+      <div class="footer-box">
+        <img src="./images/logo.png" alt="" />
+        <div class="social">
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-youtube"></i>
+        </div>
+      </div>
+
+      <div class="footer-box">
+        <h2>Informations</h2>
+        <li>
+          <a href="#">Conditions de vente</a>
+        </li>
+        <li>
+          <a href="#">Mentions légales</a>
+        </li>
+        <li>
+          <a href="#">Support</a>
+        </li>
+        <li>
+          <a href="contact.html">Nous contacter</a>
+        </li>
+      </div>
+
+      <div class="footer-box">
+        <h2>Nos locaux</h2>
+        <li>
+          <a href="#">Congo</a>
+        </li>
+        <li>
+          <a href="#">Algérie</a>
+        </li>
+        <li>
+          <a href="#">Espagne</a>
+        </li>
+        <li>
+          <a href="#">Italie</a>
+        </li>
+        <li>
+          <a href="#">Canada</a>
+        </li>
+      </div>
+
+      <div class="footer-box">
+        <h3>Paiements</h3>
+        <div class="payement">
+          <img src="./images/pay-01.png" alt="" />
+          <img src="./images/pay-02.png" alt="" />
+          <img src="./images/pay-03.png" alt="" />
+          <img src="./images/pay-04.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <div class="copy">
+      <p>
+        &copy; Ingénieur Sinso Païder OBA IBARA - tous droits réservés - 2026
+      </p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
